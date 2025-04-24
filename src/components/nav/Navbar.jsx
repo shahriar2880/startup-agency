@@ -1,12 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const Navbar = () => {
 
+  const [toggle, setToggle] = useState(false)
+  const [activeLink, setActiveLink] = useState('#home')
+
   const navlinks = [
-    { href: '#Home', label: 'Home' },
-    { href: '#About', label: 'About Us' },
-    { href: '#Services', label: 'Services' },
-    { href: '#Contact', label: 'Contact' },
+    { href: '#home', label: 'Home' },
+    { href: '#about', label: 'About Us' },
+    { href: '#services', label: 'Services' },
+    { href: '#contact', label: 'Contact' },
     { href: '#testimonials', label: 'Testimonials' },
   ]
 

@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 const Navbar = () => {
 
-  const [toggle, setToggle] = useState(false)
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [activeLink, setActiveLink] = useState('#home')
 
   const navlinks = [
@@ -25,7 +25,20 @@ const Navbar = () => {
           <span className='text-xl font-bold text-gray-500'>Socket.io</span>
           </div>
         </div>
+
         {/* desktop navitems */}
+        <div className='hidden md:flex items-center gap-8'>
+          {navlinks.map((link, index) => (
+            <a
+              key={index}
+              href={link.href}
+              className={`text-sm font-medium relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-blue-600 after:transition-all ${activeLink === link.href ? 'text-blue-700 after:w-full' : 'text-gray-500 hover:text-gray-900'}`}
+              onClick={() => setActiveLink(link.href)}
+            >
+              {link.label}
+            </a>
+          ))}
+        </div>
         {/* get in touch */}
         {/* mobile menu */}
       </div>

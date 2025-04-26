@@ -18,7 +18,7 @@ const Navbar = () => {
       <div className="w-full container mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-8 md:h-20 h-16">
         {/* logo */}
         <div className="flex items-center gap-1 cursor-pointer">
-          <div className="flex items-center gap-1">
+          <div className="flex items-center gap-1 animate-pulse">
             <div className="w-6 h-6 bg-blue-700 rounded-full opacity-70 hover:opacity-100 transition-opacity"></div>
             <div className="w-6 h-6 -ml-4 bg-red-700 rounded-full opacity-100 hover:opacity-70 transition-opacity"></div>
           </div>

@@ -19,10 +19,10 @@ const Hero = () => {
 
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
           We boost the growth for
-          <span className="text-blue-600 relative inline-block">
+          <span className="text-blue-600 inline-block">
             Startup to Fortune 500
-            <span className="absolute bottom-0 left-0 w-full h-0.5 bg-blue-200/60"></span>
           </span>
+          <h6 className=" bottom-0 left-0 w-full h-0.5 bg-blue-200/60"></h6>
           Companies
           <span className="inline-block ml-2 animate-pulse">⏰</span>
         </h1>
@@ -49,11 +49,11 @@ const Hero = () => {
 
       {/* right column */}
       <div className="w-full md:w-1/2 mt-16 md:mt-0 pl-0 md:pl-12">
-        <div className="relative">
+        <div className="">
           <img
             src={heroImage}
             alt="Team meeting"
-            className="rounded-lg relative z-10 hover:scale-[1.02] transition-transform duration-300"
+            className="rounded-lg z-10 hover:scale-[1.02] transition-transform duration-300"
           />
         </div>
       </div>

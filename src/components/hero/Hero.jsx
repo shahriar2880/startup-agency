@@ -17,7 +17,7 @@ const Hero = () => {
 
         {/* heading */}
 
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+        <h1 className="typewriter-text text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
           We boost the growth for
           <span className="text-blue-600 inline-block">
             Startup to Fortune 500

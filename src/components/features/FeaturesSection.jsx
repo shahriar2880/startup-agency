@@ -19,7 +19,7 @@ const FeaturesSection = () => {
     },
   ];
   return (
-    <section className="max-w-7xl mx-auto px-4 py-16">
+    <section className="max-w-7xl mx-auto px-4 py-16 bg-gray-100" id="about">
       <div className="text-center mb-12">
         <h2 className="text-3xl font-bold mb-4">
           How can we help your business?

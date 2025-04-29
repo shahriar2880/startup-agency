@@ -2,6 +2,7 @@ import "./App.css";
 import CompanyLogo from "./components/comanylogo/CompanyLogo";
 import FeaturesSection from "./components/features/FeaturesSection";
 import Hero from "./components/hero/Hero";
+import MonitorSection from "./components/monitorsection/MonitorSection";
 import Navbar from "./components/nav/Navbar";
 import PurposeSection from "./components/purpose/PurposeSection";
 import ScheduleSection from "./components/schedulesection/ScheduleSection";
@@ -18,6 +19,7 @@ function App() {
         <PurposeSection/>
         <FeaturesSection/>
         <ScheduleSection/>
+        <MonitorSection/>
       </div>
     </main>
   );

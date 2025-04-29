@@ -40,15 +40,16 @@ const FeaturesSection = () => {
             >
               <div className="text-3xl">{feature.icon}</div>
             </div>
-            <h3 className="text-2xl font-medium text-center mb-3">{feature.title}</h3>
+            <h3 className="text-2xl font-medium text-center mb-3">
+              {feature.title}
+            </h3>
             <p className="text-gray-500 text-center">{feature.description}</p>
           </div>
         ))}
       </div>
       <div className="text-center mt-12">
-        <button className="bg-blue-600 text-white cursor-pointer px-8 py-3 rounded-full font-medium hover:bg-blue-700 transition-colors relative">
+        <button className="bg-blue-600 text-white cursor-pointer px-8 py-3 rounded-full font-medium hover:bg-blue-700 ">
           Become a Partner
-          <div className="absolute -z-10 w-full h-full rounded-full bg-blue-800/40 blur-lg top-0 left-0"></div>
         </button>
       </div>
     </section>

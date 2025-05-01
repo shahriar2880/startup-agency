@@ -38,7 +38,7 @@ const MonitorSection = () => {
         </div>
 
         {/* Right side - Swiper with background */}
-        <div className="w-full md:w-1/2 relative">
+        <div className="w-full md:w-1/2">
           <div className="p-4">
             <img
               src={monitorCardBg}

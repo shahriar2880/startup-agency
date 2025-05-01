@@ -53,11 +53,12 @@ const TestimonialsSection = () => {
   return (
     <section id="testimonials" className="py-16 px-4 max-w-7xl mx-auto">
       <div className="text-center mb-12">
+        <p className="text-sm font-bold tracking-wider text-indigo-600 uppercase">Testimonials</p>
         <h2 className="text-3xl md:text-4xl font-bold mb-4">
-          What our happy client say
+        Here's what our customers said
         </h2>
         <p className="text-gray-600">
-          Things that make it the best place to start trading
+        Testimonials is a great way to increase brand trust and awareness. Use this section to highlight your popular customers.
         </p>
       </div>
 

@@ -2,7 +2,7 @@ import React from "react";
 
 const PricingSection = () => {
   return (
-    <section id="services" class="bg-white">
+    <section id="" class="bg-white">
       <div class="py-3 px-4 mx-auto max-w-screen-xl lg:py-3 lg:px-6">
         <div class="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
           <h2 class="mb-4 text-4xl tracking-tight font-mono text-red-400">
@@ -13,7 +13,7 @@ const PricingSection = () => {
             and capital can unlock long-term value and drive economic growth.
           </p>
         </div>
-        <div class="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
+        <div class="space-y-8 lg:grid lg:grid-cols-3 md:grid md:grid-cols-2 sm:gap-6 xl:gap-10 lg:space-y-0">
           <div class=" flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 rounded-3xl shadow-2xl  xl:p-8">
             <h3 class="mb-4 text-2xl font-mono">Starter</h3>
             <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400">

@@ -9,8 +9,8 @@ const Hero = () => {
         {/* start badge */}
 
         <div className="flex  items-center gap-2 bg-gray-100 w-fit px-4 py-2 rounded-full hover:bg-gray-200 transition-colors coursor-pointer group">
-          <span className="text-blue-600 group-hover:text-amber-400 group-hover:scale-125 transition-transform">
-            ★
+          <span className="text-blue-600 group-hover:text-amber-400 group-hover:scale-110 transition-transform">
+          ★★★★★
           </span>
           <span className="text-sm font-medium">Jump start your growth</span>
         </div>

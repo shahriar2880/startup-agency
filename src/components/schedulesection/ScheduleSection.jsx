@@ -1,9 +1,9 @@
 import React from "react";
-import scheduleImage from "../../assets/stats.webp";
+import scheduleImage from "../../assets/stats-1.png";
 
 const ScheduleSection = () => {
   return (
-    <section className="max-w-7xl mx-auto px-4 py-16 md:py-24">
+    <section className="max-w-7xl mx-auto px-4 py-2 md:py-3">
       <div className="flex flex-col md:flex-row items-center justify-between gap-12 md:gap-24">
         {/* Left side - Image */}
         <div className="w-full md:w-1/2">

@@ -1,5 +1,5 @@
 import React from "react";
-import heroImage from "../../assets/hero-image.png";
+import heroImage from "../../assets/startup4.png";
 
 const Hero = () => {
   return (
@@ -53,7 +53,7 @@ const Hero = () => {
           <img
             src={heroImage}
             alt="Team meeting"
-            className="rounded-lg z-10 hover:scale-[1.02] transition-transform duration-300"
+            className="rounded-lg z-10 hover:scale-[1.02] transition-colors duration-300"
           />
         </div>
       </div>

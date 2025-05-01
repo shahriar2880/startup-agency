@@ -1,9 +1,9 @@
 import React from "react";
-import monitorCardBg from "../../assets/monitor-card.webp";
+import monitorCardBg from "../../assets/monitor-card.png";
 
 const MonitorSection = () => {
   return (
-    <section className="max-w-7xl container mx-auto px-4 py-12 md:py-14">
+    <section className="max-w-7xl container mx-auto px-4 py-2 md:py-3">
       <div className="flex flex-col md:flex-row items-center gap-12">
         {/* Left side - Content */}
         <div className="w-full md:w-1/2">

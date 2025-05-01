@@ -7,6 +7,7 @@ import Navbar from "./components/nav/Navbar";
 import PricingSection from "./components/pricingsection/PricingSection";
 import PurposeSection from "./components/purpose/PurposeSection";
 import ScheduleSection from "./components/schedulesection/ScheduleSection";
+import ServicesSection from "./components/services/ServicesSection";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <ScheduleSection/>
         <MonitorSection/>
         <PricingSection/>
+        <ServicesSection/>
       </div>
     </main>
   );

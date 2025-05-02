@@ -10,3 +10,27 @@
   }
 }
 
+.testimonials-swiper{
+  padding: 20px 0;
+
+}
+.testimonials-swiper .Swiper-Slide{
+  height: auto;
+}
+
+.testimonials-swiper .swiper-slide-next::after,
+.testimonials-swiper .swiper-slide-prev::after{
+display: none;
+}
+
+.testimonials-swiper, .swiper-slide-prev{
+  display: none;
+}
+
+
+
+.swiper-button-next-custom.swiper-button-disabled,
+.swiper-button-prev-custom.swiper-button-disabled{
+  opacity: 0.5;
+  cursor: not-allowed;
+}

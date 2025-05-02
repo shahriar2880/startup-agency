@@ -51,7 +51,7 @@ const TestimonialsSection = () => {
     },
   ];
   return (
-    <section id="testimonials" className="py-16 px-4 max-w-7xl mx-auto">
+    <section id="testimonials" className="py-16 px-4 container mx-auto">
       <div className="text-center mb-12">
         <p className="text-sm font-bold tracking-wider text-indigo-600 uppercase">
           Testimonials

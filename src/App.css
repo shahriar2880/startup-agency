@@ -1,3 +1,6 @@
+.star{
+  margin-top: 90px;
+}
 .animate-marquee {
   animation: marquee 10s linear infinite;
 }
@@ -26,8 +29,6 @@ display: none;
 .testimonials-swiper, .swiper-slide-prev{
   display: none;
 }
-
-
 
 .swiper-button-next-custom.swiper-button-disabled,
 .swiper-button-prev-custom.swiper-button-disabled{

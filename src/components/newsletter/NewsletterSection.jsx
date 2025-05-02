@@ -2,9 +2,9 @@ import React from "react";
 
 const NewsletterSection = () => {
   return (
-    <section className="bg-indigo-700 container mx-auto rounded-lg ">
+    <section className="bg-indigo-700 rounded-4xl container mx-auto">
       <div className=" px-4 py-12  sm:px-6 lg:py-16 lg:px-8">
-        <div className="px-6 py-6  md:py-12 md:px-12 lg:py-16 lg:px-16 xl:flex xl:items-center">
+        <div className="px-6 py-6 md:py-12 md:px-12 lg:py-16 lg:px-16 xl:flex xl:items-center">
           <div className="xl:w-0 xl:flex-1">
             <h2 className="text-3xl font-bold leading-8 tracking-tight text-white sm:text-4xl sm:leading-9">
               Get notified whenever we publish something new

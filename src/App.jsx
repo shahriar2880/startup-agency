@@ -1,6 +1,7 @@
 import "./App.css";
 import CompanyLogo from "./components/comanylogo/CompanyLogo";
 import FeaturesSection from "./components/features/FeaturesSection";
+import FooterSection from "./components/footer/FooterSection";
 import Hero from "./components/hero/Hero";
 import MonitorSection from "./components/monitorsection/MonitorSection";
 import Navbar from "./components/nav/Navbar";
@@ -28,6 +29,7 @@ function App() {
         <ServicesSection/>
         <TestimonialsSection/>
         <NewsletterSection/>
+        <FooterSection/>
       </div>
     </main>
   );

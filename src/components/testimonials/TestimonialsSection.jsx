@@ -99,7 +99,7 @@ const TestimonialsSection = () => {
                     className="w-full h-full object-cover rounded-full"
                   />
                   <svg
-                    class="fill-current text-white bg-green-600 rounded-full p-1 absolute top-23 left-60 w-7 h-7 -mx-1 -my-1"
+                    class="fill-current text-white bg-green-600 rounded-full p-1 absolute top-35 right-39  w-7 h-7 -mx-1 -my-1"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 20 20"
                   >

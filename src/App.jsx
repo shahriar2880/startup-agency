@@ -21,11 +21,11 @@ function App() {
         <Navbar />
         <Hero />
         <CompanyLogo/>
-        <PurposeSection/>
         <FeaturesSection/>
+        <PurposeSection/>
         <ScheduleSection/>
-        <MonitorSection/>
         <PricingSection/>
+        <MonitorSection/>
         <ServicesSection/>
         <TestimonialsSection/>
         <NewsletterSection/>

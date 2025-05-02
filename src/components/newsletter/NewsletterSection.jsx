@@ -2,7 +2,7 @@ import React from "react";
 
 const NewsletterSection = () => {
   return (
-    <section className="bg-indigo-700 rounded-4xl container mx-auto">
+    <section id="newsletter" className="bg-indigo-700 rounded-4xl container mx-auto">
       <div className=" px-4 py-12  sm:px-6 lg:py-16 lg:px-8">
         <div className="px-6 py-6 md:py-12 md:px-12 lg:py-16 lg:px-16 xl:flex xl:items-center">
           <div className="xl:w-0 xl:flex-1">

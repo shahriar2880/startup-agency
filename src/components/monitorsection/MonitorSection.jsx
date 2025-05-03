@@ -1,12 +1,16 @@
 import React from "react";
+import {motion} from "framer-motion"
 import monitorCardBg from "../../assets/monitor-card.png";
+import { fadeIn } from "../../utils/motion";
 
 const MonitorSection = () => {
   return (
     <section className="max-w-7xl container mx-auto px-4 py-2 md:py-3">
       <div className="flex flex-col md:flex-row items-center gap-12">
         {/* Left side - Content */}
-        <div className="w-full md:w-1/2">
+        <motion.div variants={fadeIn("down",0.4)}
+                    initial="hidden"
+                    whileInView="show" className="w-full md:w-1/2">
           <span className="text-emerald-500 font-semibold">MONITOR</span>
           <h2 className="text-3xl md:text-4xl font-bold text-navy-900 mt-4 mb-6 md:w-4/5">
             Introducing best mobile carousels
@@ -35,10 +39,12 @@ const MonitorSection = () => {
               />
             </svg>
           </a>
-        </div>
+        </motion.div>
 
         {/* Right side - Swiper with background */}
-        <div className="w-full md:w-1/2">
+        <motion.div variants={fadeIn("up",0.5)}
+                    initial="hidden"
+                    whileInView="show" className="w-full md:w-1/2">
           <div className="p-4">
             <img
               src={monitorCardBg}
@@ -46,7 +52,7 @@ const MonitorSection = () => {
               className="w-full h-auto rounded-lg"
             />
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

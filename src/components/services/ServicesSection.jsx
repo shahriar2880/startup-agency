@@ -1,4 +1,6 @@
 import React from "react";
+import {motion} from "framer-motion";
+import { fadeIn, slideIn, textVariant } from "../../utils/motion";
 
 const ServicesSection = () => {
   const services = [
@@ -50,7 +52,9 @@ const ServicesSection = () => {
       id="services"
       className="container mx-auto px-4 space-y-6  py-8 md:py-12 lg:py-20"
     >
-      <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
+      <motion.div variants={textVariant(0.2)}
+                  initial="hidden"
+                  whileInView="show" className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
         <h2 className="font-bold text-3xl leading-[1.1] sm:text-3xl md:text-6xl">
           Future of support with new shape
         </h2>
@@ -60,11 +64,13 @@ const ServicesSection = () => {
           individual preferences and tailoring recommendations or content based
           on user behavior and historical data.
         </p>
-      </div>
+      </motion.div>
 
-      <div className="mx-auto grid justify-center gap-4 sm:grid-cols-2 md:max-w-[64rem] md:grid-cols-3">
+      <div  className="mx-auto grid justify-center gap-4 sm:grid-cols-2 md:max-w-[64rem] md:grid-cols-3">
         {services.map((service) => (
-          <div
+          <motion.div variants={fadeIn("left",0.2)}
+          initial="hidden"
+          whileInView="show"
             key={service.id}
             className="group overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm transition-all hover:shadow-lg hover:-translate-y-1 hover:border-indigo-300"
           >
@@ -91,7 +97,7 @@ const ServicesSection = () => {
               {/* Hover indicator */}
               <div className="absolute bottom-0 left-0 right-0 h-1 bg-indigo-500 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </section>

@@ -1,11 +1,15 @@
 import React from "react";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../utils/motion";
 
 const NewsletterSection = () => {
   return (
     <section id="newsletter" className="bg-indigo-700 rounded-4xl container mx-auto">
       <div className=" px-4 py-12  sm:px-6 lg:py-16 lg:px-8">
         <div className="px-6 py-6 md:py-12 md:px-12 lg:py-16 lg:px-16 xl:flex xl:items-center">
-          <div className="xl:w-0 xl:flex-1">
+          <motion.div variants={fadeIn('up', 0.1)}
+                            initial="hidden"
+                            whileInView="show" className="xl:w-0 xl:flex-1">
             <h2 className="text-3xl font-bold leading-8 tracking-tight text-white sm:text-4xl sm:leading-9">
               Get notified whenever we publish something new
             </h2>
@@ -15,8 +19,10 @@ const NewsletterSection = () => {
             >
               Sign up for our newsletter to stay up to date.
             </p>
-          </div>
-          <div className="mt-8 sm:w-full sm:max-w-md xl:mt-0 xl:ml-8">
+          </motion.div>
+          <motion.div variants={fadeIn('down', 0.1)}
+                            initial="hidden"
+                            whileInView="show" className="mt-8 sm:w-full sm:max-w-md xl:mt-0 xl:ml-8">
             <form
               target="_blank"
               className="sm:flex"
@@ -41,7 +47,7 @@ const NewsletterSection = () => {
             <p className="mt-3 text-sm leading-5 text-indigo-200">
               We will never spam. That's our promise .
             </p>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

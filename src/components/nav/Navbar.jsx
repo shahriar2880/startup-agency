@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import { HiMenu, HiX } from "react-icons/hi";
+import { motion } from "framer-motion"
+import { fadeIn } from "../../utils/motion";
+
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,7 +17,11 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="fixed z-1000 top-0 left-0 right-0 bg-white/90 shadow-sm backdrop-blur-sm border-b border-gray-200">
+    <motion.nav variants={fadeIn('down', 0.3)}
+    initial="hidden"
+    whileInView="show"
+    viewport={{once: true}}
+    className="fixed z-1000 top-0 left-0 right-0 bg-white/90 shadow-sm backdrop-blur-sm border-b border-gray-200">
       <div className="w-full container mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-8 md:h-20 h-16">
         {/* logo */}
         <a href="#" className="flex items-center gap-1 cursor-pointer">
@@ -103,7 +110,7 @@ const Navbar = () => {
           </div>
         </div>
       )}
-    </nav>
+    </motion.nav>
   );
 };
 

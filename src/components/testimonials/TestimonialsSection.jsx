@@ -1,9 +1,11 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
+import { motion } from "framer-motion";
 import "swiper/css";
 import "swiper/css/navigation";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
+import { fadeIn } from "../../utils/motion";
 
 const TestimonialsSection = () => {
   const testimonials = [
@@ -51,8 +53,11 @@ const TestimonialsSection = () => {
     },
   ];
   return (
-    <section id="testimonials" className="py-16 px-4 container mx-auto">
-      <div className="text-center mb-12">
+    <section  id="testimonials" className="py-16 px-4 container mx-auto">
+      <motion.div variants={fadeIn('up', 0.1)}
+                  initial="hidden"
+                  whileInView="show" className="text-center mb-12">
+        <div>
         <p className="text-sm font-bold tracking-wider text-indigo-600 uppercase">
           Testimonials
         </p>
@@ -63,7 +68,8 @@ const TestimonialsSection = () => {
           Testimonials is a great way to increase brand trust and awareness. Use
           this section to highlight your popular customers.
         </p>
-      </div>
+        </div>
+      </motion.div>
 
       <div className="relative">
         <Swiper
@@ -91,6 +97,7 @@ const TestimonialsSection = () => {
               key={index}
               className="Swiper-Slide h-full md:py-12 py-4"
             >
+              <div>
               <div className="text-center items-center justify-center bg-white p-4 rounded-lg shadow-md h-full flex flex-col">
                 <div className="w-24 h-24 mx-auto mb-4">
                 
@@ -116,6 +123,7 @@ const TestimonialsSection = () => {
                   </span>
                 </div>
                 <p className="text-gray-600">{testimonial.text}</p>
+              </div>
               </div>
             </SwiperSlide>
           ))}

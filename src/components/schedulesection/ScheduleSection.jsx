@@ -1,5 +1,7 @@
 import React from "react";
 import scheduleImage from "../../assets/stats-1.png";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../utils/motion";
 
 const ScheduleSection = () => {
   return (
@@ -7,15 +9,26 @@ const ScheduleSection = () => {
       <div className="flex flex-col md:flex-row items-center justify-between gap-12 md:gap-24">
         {/* Left side - Image */}
         <div className="w-full md:w-1/2">
-          <img
-            src={scheduleImage}
-            alt="Statistics dashboard"
-            className="w-full h-auto"
-          />
+          <motion.div
+            variants={fadeIn("right", 0.4)}
+            initial="hidden"
+            whileInView="show"
+          >
+            <img
+              src={scheduleImage}
+              alt="Statistics dashboard"
+              className="w-full h-auto"
+            />
+          </motion.div>
         </div>
 
         {/* Right side - Content */}
-        <div className="w-full md:w-1/2">
+        <motion.div
+          variants={fadeIn("left", 0.5)}
+          initial="hidden"
+          whileInView="show"
+          className="w-full md:w-1/2"
+        >
           <span className="text-orange-500 font-semibold">SCHEDULE</span>
           <h2 className="text-3xl md:text-4xl font-bold text-navy-900 mt-4 mb-6">
             Streamline Your Business <br />
@@ -46,7 +59,7 @@ const ScheduleSection = () => {
               />
             </svg>
           </a>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
